@@ -8,7 +8,7 @@ const router = JSONServer.router("db.json")//JSONServer is a variable
 //create middleware
 const middleware=JSONServer.defaults()//middleware is a variable
 //define port to run JSON file.
-const PORT= 3000
+const PORT= 3000 || process.env.PORT
 //use middleware JSON server
 libServer.use(middleware)
 //define routes for client request
